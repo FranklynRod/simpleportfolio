@@ -57,6 +57,17 @@ h1{
 .cards{
     display: flex;
     justify-content: space-between;
+ 
+}
+
+.project-card{
+    border: solid;
+}
+
+#footer-text{
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
 }
 
 /* @media screen and (min-width: 40em) {
