@@ -7,7 +7,6 @@ ul {
 }
 
 li {
-
     float:left;
 }
 
@@ -48,15 +47,16 @@ h1{
     margin-top: 45px;
     margin-left: 45px;
     font-family: sans-serif;
-    
 }
-.cards{
+.card-holder{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .project-card{
     border: solid;
-
+    border-color: grey;
+    display: flex;
+    flex-direction: column; 
 }
 #footer-text{
     text-align: center;
