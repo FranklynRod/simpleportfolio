@@ -10,22 +10,20 @@
             <legend>Hello!</legend>
             <div class="name">
                 <h3>What is your name?</h3>
-                <input id="text-box" type="text"></input>
-                <button a href="homepage.html">Enter</button>
+                <input type="text" id="nameInput" class="text-box"></input>
+                <button onclick="saveName()" type="button">Enter</button>
             </div>
         </fieldset>
         
     </div>
-    <!-- <script>
+    <script>
         function saveName() {
+            //gets name user inputs
             var name = document.getElementById("nameInput").value;
-            // Here, you can perform the necessary logic to save the name to another file.
-            // This can involve various methods such as using AJAX to send the name to a server-side script for processing and saving.
-            // Alternatively, you can use client-side storage options like localStorage or cookies to store the name.
-
-            // For example, using localStorage to save the name:
+            // localStorage to save the name:
             localStorage.setItem("name", name);
+            window.location.href='/homepage.html';
         }
-    </script> -->
+    </script>
 </body>
 </html>

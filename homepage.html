@@ -15,7 +15,7 @@
                     <a href="#welcome-section">About Me</a>
                     </li>
                     <li>
-                        <a href="#skill-section">Skills</a></li>
+                        <a href="#skill-section">Skills</a>
                     </li>
                     <li>
                         <a href="#portfolio-section">Portfolio</a>
@@ -24,7 +24,7 @@
             
             </nav>
         </header>
-        <h1>Welcome Your_Name_Here!</h1>
+        <h1>Welcome <span id="nameDisplay"> </span></h1>
         <section id="welcome-section">
 
         <p>I'm pivoting from a healthcare field and special education background into software development. I previously worked as an occupational therapist, where I spearheaded functional skills-based initiatives for marginalized differently-abled clients in the school and psychiatry settings. My interest in software development was sparked when assisting clients in using assistive devices to access websites/apps. I am currently enrolled at Ada Developer Academy C18 cohort as a full-stack software developer student. 
@@ -43,31 +43,12 @@
 
         <section id="portfolio-section"></section>
          <h1>Portfolio</h1>
-         <!-- <div class="card-holder"> 
-            <div class="project-card">
-                <p>1</p>
-            </div>
-            <div class="project-card">
-                <p>1</p>
-                <p>2</p>
-            </div>
-
-         </div>
-
-         </section> -->
-
-
-
-
-
-
-
         <section id="portfolio-section">
         
         <div class="card-holder"> 
             <div class="project-card">
                 <p class="project-heading">Crave & Feast</p>
-                <img src="media/CraveandFeast.png" alt="plate of food sizzing with a enter button in the middle">
+                <img src="media/CraveandFeast.png" alt="Image of a plate of food sizzing with a enter button in the middle">
                 <div class='github-button'>
                 <button  class='github-button' onclick="window.location.href='https://github.com/FranklynRod/craveandfeastclient';">Github</button>
                 <button onclick="window.location.href='https://github.com/FranklynRod/back-end-inspiration-board';">Demo</button>
@@ -75,21 +56,21 @@
         </div>
                 <div class="project-card">
                 <p class="project-heading">Primary Capital</p>
-                <img>
+                <img  src="media/Primary Capital.png" alt="Image of an American Dollars Sign">
                 <div class='github-button'>
                 <button onclick="window.location.href='https://github.com/FranklynRod/craveandfeastclient';">Github</button>
                 </div>
                 </div>
                 <div class="project-card">
                 <p class="project-heading">Weather App</p>
-                <img>
+                <img  src="media/Weather.png" alt="Image of a Weather Icon">
                 <div class='github-button'>
                 <button onclick="window.location.href='https://github.com/FranklynRod/weather-report';">Github</button>
             </div>
             </div>
                 <div class="project-card">
                 <p class="project-heading">Inspiration Board</p>
-                <img>
+                <img  src="media/InspirationBoard.png" alt="Image of quotation marks within a quotation bubble">
                 <div class='github-button'>
                 <button onclick="window.location.href='https://github.com/FranklynRod/back-end-inspiration-board';">Github</button>
             
@@ -100,6 +81,14 @@
 <footer>
     <p id="footer-text">Copyright © 2023 Franklyn Rodriguez</p>
 </footer>
+<script>
+    // Retrieve the stored name from localStorage
+    var storedName = localStorage.getItem("name");
+
+    // Display the stored name in the HTML
+    var nameDisplay = document.getElementById("nameDisplay");
+    nameDisplay.textContent = storedName;
+</script>
     </body>
     
 </html>
